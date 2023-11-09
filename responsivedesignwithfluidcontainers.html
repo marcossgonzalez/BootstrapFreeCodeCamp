@@ -37,7 +37,9 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 </style>
 
 <div class="container-fluid">
-  <h2 class="red-text">CatPhotoApp</h2>
+  <!--Agora que estamos usando o Bootstrap, podemos centralizar nosso elemento de título para torná-lo mais bonito. 
+    Tudo o que precisamos fazer é adicionar a classe text-center ao nosso elemento h2.-->
+  <h2 class="red-text text-center">CatPhotoApp</h2>
 
   <p>Click here for <a href="#">cat photos</a>.</p>
 
@@ -45,7 +47,11 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
       src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
       alt="A cute orange cat lying on its back."></a>
   <img class="img-responsive" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt=""/>
-
+  <button class="btn btn-primary btn-block">Like</button>
+  <!--Normalmente, os elementos do botão com as classes btn e btn-default são tão largos quanto o texto que eles contêm. 
+    Por exemplo: <button class="btn btn-default">Submit</button> ; esse botão será tão largo quanto a palavra Submit-->
+  <!--Ao fazê-los bloquear elementos com a classe adicional de 'btn-block', seu botão se estenderá para preencher todo o 
+    espaço horizontal da página e quaisquer elementos seguintes fluirão para uma "nova linha" abaixo do bloco.-->
   <p>Things cats love:</p>
   <ul>
     <li>cat nip</li>
