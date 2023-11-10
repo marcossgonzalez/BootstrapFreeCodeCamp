@@ -8,6 +8,8 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <style>
   
 
@@ -30,27 +32,32 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 <div class="container-fluid">
   <!--Agora que estamos usando o Bootstrap, podemos centralizar nosso elemento de título para torná-lo mais bonito. 
     Tudo o que precisamos fazer é adicionar a classe text-center ao nosso elemento h2.-->
-  <h2 class="text-primary text-center">CatPhotoApp</h2>
-
+    <div class="row">
+      <div class="col-xs-8">
+    <h2 class="text-primary text-center">CatPhotoApp</h2>
+  </div>
+  <div class="col-xs-4">
   <a href="#"><img class="img-responsive thick-green-border"
       src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
       alt="A cute orange cat lying on its back."></a>
+    </div>
+    </div>
   <img class="img-responsive" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt=""/>
   <div class="row">
     <div class="col-xs-4">
-      <button class="btn btn-primary btn-block">Like</button>
+      <button class="btn btn-primary btn-block "><i class="fas fa-thumbs-up"></i>Like</button>
     </div>
     <!--Normalmente, os elementos do botão com as classes btn e btn-default são tão largos quanto o texto que eles contêm. 
       Por exemplo: <button class="btn btn-default">Submit</button> ; esse botão será tão largo quanto a palavra Submit-->
     <!--Ao fazê-los bloquear elementos com a classe adicional de 'btn-block', seu botão se estenderá para preencher todo o 
       espaço horizontal da página e quaisquer elementos seguintes fluirão para uma "nova linha" abaixo do bloco.-->
     <div class="col-xs-4">
-      <button class="btn btn-block btn-info">Info</button>
+      <button class="btn btn-block btn-info"><i class="fas fa-info-circle"></i>Info</button>
     </div>
     <!--Bootstrap vem com diversas cores predefinidas para botões. A classe btn-info é usada para chamar a atenção para ações
       opcionais que o usuário pode realizar.-->
     <div class="col-xs-4">
-      <button class="btn btn-block btn-danger">Delete</button>
+      <button class="btn btn-block btn-danger"><i class="fas fa-trash"></i>Delete</button>
     </div>
     <!--Bootstrap vem com diversas cores predefinidas para botões. A classe 'btn-danger' é a classe que dá ao botão a cor vermelha
       ,com ela você usará a classe para notificar os usuários de que o botão executará uma ação destrutiva, 
@@ -67,8 +74,11 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
   No aplicativo Cat Photo que estamos construindo, usaremos col-xs-*, onde xs significa 'extra-small' ou extra-pequeno
   (como a tela "extra-pequena" de um celular) e * é o número de colunas de largura que o elemento deveria ter.
   -->
+
+  <!--Ao usar o elemento inline `span`, você pode colocar vários elementos na mesma linha e até mesmo estilizar diferentes 
+    partes da mesma linha de maneira diferente.-->
   </div> 
-    <p>Things cats love:</p>
+    <p>Things cats <span class="text-danger">love</span>:</p>
   <ul>
     <li>cat nip</li>
     <li>laser pointers</li>
