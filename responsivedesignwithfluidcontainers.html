@@ -47,30 +47,38 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
       src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
       alt="A cute orange cat lying on its back."></a>
   <img class="img-responsive" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt=""/>
-  <button class="btn btn-primary btn-block">Like</button>
-  <!--Normalmente, os elementos do botão com as classes btn e btn-default são tão largos quanto o texto que eles contêm. 
-    Por exemplo: <button class="btn btn-default">Submit</button> ; esse botão será tão largo quanto a palavra Submit-->
-  <!--Ao fazê-los bloquear elementos com a classe adicional de 'btn-block', seu botão se estenderá para preencher todo o 
-    espaço horizontal da página e quaisquer elementos seguintes fluirão para uma "nova linha" abaixo do bloco.-->
-  <button class="btn btn-block btn-info">Info</button>
-  <!--Bootstrap vem com diversas cores predefinidas para botões. A classe btn-info é usada para chamar a atenção para ações
-     opcionais que o usuário pode realizar.-->
-     <button class="btn btn-block btn-danger">Delete</button>
-  <!--Bootstrap vem com diversas cores predefinidas para botões. A classe 'btn-danger' é a classe que dá ao botão a cor vermelha
-    ,com ela você usará a classe para notificar os usuários de que o botão executará uma ação destrutiva, 
-    como exclusão da foto de um gato.-->
-<!--Bootstrap usa um sistema de grade responsivo de 12 colunas, o que facilita colocar elementos em linhas e especificar a 
-  largura relativa de cada elemento. A maioria das classes do Bootstrap pode ser aplicada a um elemento div.
-Bootstrap possui diferentes atributos de largura de coluna que usa dependendo da largura da tela do usuário. 
-Por exemplo, os telefones têm telas estreitas e os laptops têm telas mais largas.
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-primary btn-block">Like</button>
+    </div>
+    <!--Normalmente, os elementos do botão com as classes btn e btn-default são tão largos quanto o texto que eles contêm. 
+      Por exemplo: <button class="btn btn-default">Submit</button> ; esse botão será tão largo quanto a palavra Submit-->
+    <!--Ao fazê-los bloquear elementos com a classe adicional de 'btn-block', seu botão se estenderá para preencher todo o 
+      espaço horizontal da página e quaisquer elementos seguintes fluirão para uma "nova linha" abaixo do bloco.-->
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <!--Bootstrap vem com diversas cores predefinidas para botões. A classe btn-info é usada para chamar a atenção para ações
+      opcionais que o usuário pode realizar.-->
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+    <!--Bootstrap vem com diversas cores predefinidas para botões. A classe 'btn-danger' é a classe que dá ao botão a cor vermelha
+      ,com ela você usará a classe para notificar os usuários de que o botão executará uma ação destrutiva, 
+      como exclusão da foto de um gato.-->
+  <!--Bootstrap usa um sistema de grade responsivo de 12 colunas, o que facilita colocar elementos em linhas e especificar a 
+    largura relativa de cada elemento. A maioria das classes do Bootstrap pode ser aplicada a um elemento div.
+  Bootstrap possui diferentes atributos de largura de coluna que usa dependendo da largura da tela do usuário. 
+  Por exemplo, os telefones têm telas estreitas e os laptops têm telas mais largas.
 
-Tomemos por exemplo a classe col-md-* do Bootstrap. Aqui, md significa médio e * é um número que especifica quantas colunas de 
-largura o elemento deve ter. Neste caso, a largura da coluna de um elemento em uma tela de tamanho médio, como um laptop, está 
-sendo especificada.
+  Tomemos por exemplo a classe col-md-* do Bootstrap. Aqui, md significa médio e * é um número que especifica quantas colunas de 
+  largura o elemento deve ter. Neste caso, a largura da coluna de um elemento em uma tela de tamanho médio, como um laptop, está 
+  sendo especificada.
 
-No aplicativo Cat Photo que estamos construindo, usaremos col-xs-*, onde xs significa 'extra-small' ou extra-pequeno
-(como a tela "extra-pequena" de um celular) e * é o número de colunas de largura que o elemento deveria ter.
--->
+  No aplicativo Cat Photo que estamos construindo, usaremos col-xs-*, onde xs significa 'extra-small' ou extra-pequeno
+  (como a tela "extra-pequena" de um celular) e * é o número de colunas de largura que o elemento deveria ter.
+  -->
+  </div> 
     <p>Things cats love:</p>
   <ul>
     <li>cat nip</li>
