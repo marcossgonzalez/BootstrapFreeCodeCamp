@@ -8,35 +8,35 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <style>
-    h2 {
-      font-family: Lobster, Monospace;
-    }
+  h2 {
+    font-family: Lobster, Monospace;
+  }
 
-    .thick-green-border {
-      border-color: green;
-      border-width: 10px;
-      border-style: solid;
-      border-radius: 50%;
-    }
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
 </style>
 
 <div class="container-fluid">
   <!--Agora que estamos usando o Bootstrap, podemos centralizar nosso elemento de título para torná-lo mais bonito. 
     Tudo o que precisamos fazer é adicionar a classe text-center ao nosso elemento h2.-->
-    <div class="row">
-      <div class="col-xs-8">
-    <h2 class="text-primary text-center">CatPhotoApp</h2>
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border"
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="A cute orange cat lying on its back."></a>
+    </div>
   </div>
-  <div class="col-xs-4">
-  <a href="#"><img class="img-responsive thick-green-border"
-      src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-      alt="A cute orange cat lying on its back."></a>
-    </div>
-    </div>
-  <img class="img-responsive" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt=""/>
+  <img class="img-responsive" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="" />
   <div class="row">
     <div class="col-xs-4">
       <button class="btn btn-primary btn-block "><i class="fas fa-thumbs-up"></i>Like</button>
@@ -56,7 +56,7 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
     <!--Bootstrap vem com diversas cores predefinidas para botões. A classe 'btn-danger' é a classe que dá ao botão a cor vermelha
       ,com ela você usará a classe para notificar os usuários de que o botão executará uma ação destrutiva, 
       como exclusão da foto de um gato.-->
-  <!--Bootstrap usa um sistema de grade responsivo de 12 colunas, o que facilita colocar elementos em linhas e especificar a 
+    <!--Bootstrap usa um sistema de grade responsivo de 12 colunas, o que facilita colocar elementos em linhas e especificar a 
     largura relativa de cada elemento. A maioria das classes do Bootstrap pode ser aplicada a um elemento div.
   Bootstrap possui diferentes atributos de largura de coluna que usa dependendo da largura da tela do usuário. 
   Por exemplo, os telefones têm telas estreitas e os laptops têm telas mais largas.
@@ -69,10 +69,10 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
   (como a tela "extra-pequena" de um celular) e * é o número de colunas de largura que o elemento deveria ter.
   -->
 
-  <!--Ao usar o elemento inline `span`, você pode colocar vários elementos na mesma linha e até mesmo estilizar diferentes 
+    <!--Ao usar o elemento inline `span`, você pode colocar vários elementos na mesma linha e até mesmo estilizar diferentes 
     partes da mesma linha de maneira diferente.-->
-  </div> 
-    <p>Things cats <span class="text-danger">love</span>:</p>
+  </div>
+  <p>Things cats <span class="text-danger">love</span>:</p>
   <ul>
     <li>cat nip</li>
     <li>laser pointers</li>
@@ -87,24 +87,30 @@ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28an
   <form action="https://freecatphotoapp.com/submit-cat-photo">
     <div class="row">
       <div class="col-xs-6">
-    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-    </div>
-    <div class="col-xs-6">
-    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-  </div>
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
     </div>
     <div class="row">
-    <div class="col-xs-4">
-      <label><input type="checkbox" name="personality"> Loving</label>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Loving</label>
       </div>
       <div class="col-xs-4">
-      <label><input type="checkbox" name="personality"> Lazy</label>
+        <label><input type="checkbox" name="personality"> Lazy</label>
       </div>
       <div class="col-xs-4">
-      <label><input type="checkbox" name="personality"> Crazy</label>
+        <label><input type="checkbox" name="personality"> Crazy</label>
       </div>
     </div>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
+    <div class="row">
+      <div class="col-xs-7">
+        <input class="form-control" type="text" placeholder="cat photo URL" required>
+      </div>
+      <div class="col-xs-5">
+        <button class="btn btn-primary " type="submit"><i class="fa fa-paper-plane"></i>Submit</button>
+      </div>
+    </div>
   </form>
 </div>
